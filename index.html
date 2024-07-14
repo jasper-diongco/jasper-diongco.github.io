@@ -185,16 +185,16 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label for="name" class="text-xl font-light">NAME</label>
-              <input id="name" name="name" type="text" class="contact-input">
+              <input id="name" name="name" type="text" class="contact-input" required>
             </div>
             <div>
               <label for="email" class="text-xl font-light">EMAIL</label>
-              <input id="email" name="email" type="email" class="contact-input">
+              <input id="email" name="email" type="email" class="contact-input" required>
             </div>
           </div>
           <div>
             <label for="type_of_project" class="text-xl font-light">TYPE OF PROJECT</label>
-            <select name="type_of_project" id="type_of_project" class="contact-input">
+            <select name="type_of_project" id="type_of_project" class="contact-input" required>
               <option>Web Development</option>
               <option>Mobile App Development</option>
               <option>Wordpress Design & Development</option>
@@ -205,7 +205,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label for="project_timeline" class="text-xl font-light">PROJECT TIMELINE</label>
-              <select name="project_timeline" id="project_timeline" class="contact-input">
+              <select name="project_timeline" id="project_timeline" class="contact-input" required>
                 <option>3 days</option>
                 <option>7 days</option>
                 <option>15 days</option>
@@ -217,12 +217,12 @@
             </div>
             <div>
               <label for="budget" class="text-xl font-light">YOUR BUDGET</label>
-              <input id="budget" name="budget" type="text" class="contact-input">
+              <input id="budget" name="budget" type="text" class="contact-input" required>
             </div>
           </div>
           <div>
             <label for="message" class="text-xl font-light">MESSAGE</label>
-            <textarea id="message" name="message" rows="3" name="message" class="contact-input"></textarea>
+            <textarea id="message" name="message" rows="3" name="message" class="contact-input" required></textarea>
           </div>
           <div>
             <button type="submit"
