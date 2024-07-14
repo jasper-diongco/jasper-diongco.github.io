@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+
+  <link href="./output.css" rel="stylesheet">
+  <script defer src="./app.js"></script>
+</head>
+
+<body>
+  <div class="container px-7 md:px-16 mx-auto opacity-transition duration-300">
+
+    <div class="flex justify-between items-center">
+      <div>
+        <a href="index.html">
+          <img src="./images/jasper_diongco_logo.png" class="w-44 sm:w-64 user-drag-none" alt="Logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <section class="container px-7 md:px-16 mx-auto opacity-transition duration-500">
+    <h2 class="font-semibold text-3xl sm:text-4xl text-center mt-14 uppercase">Sales Monitoring System</h2>
+    <div class="font-semibold mt-7 text-2xl">Features</div>
+    <ul class="list-disc ml-4 text-xl space-y-2 mt-4">
+      <li>Manage Clients</li>
+      <li>Realtime Chat</li>
+      <li>Share Client to other Case Officer</li>
+      <li>Client Follow Up Reminder</li>
+      <li>Search Clients</li>
+    </ul>
+    <img src="./images/sales_monitoring_thumbnail.png" alt="Sales Monitoring System Image Cover"
+      class="w-full md:w-3/4 lg:w-4/6 xl:w-1/2 mx-auto from-bottom-transition duration-700 delay-200">
+  </section>
+
+  <footer class="bg-g-green py-10 text-white">
+    <div class="container px-7 md:px-16 mx-auto py-7 sm:py-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="flex items-start">
+          <div>
+            <img src="./images/email.png" alt="Email Icon">
+          </div>
+          <div class="ml-3">
+            <div class="text-xl font-semibold">Email</div>
+            <div class="text-lg mt-2">diongcojspr@gmail.com</div>
+          </div>
+        </div>
+        <div class="flex items-start mt-5 sm:mt-0">
+          <div>
+            <img src="./images/linkedin.png" alt="LinkedIn Icon">
+          </div>
+          <div class="ml-3">
+            <div class="text-xl font-semibold">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/jasper-diongco/" target="_blank" class="link">
+              <div class="text-lg mt-2">jasper-diongco</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-color: #192f21;" class="border-t-2 border-solid text-center pt-7 text-lg">
+      &copy; <span id="current-year"></span> Jasper Diongco
+    </div>
+  </footer>
+</body>
+
+</html>

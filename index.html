@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+
+  <link href="./output.css" rel="stylesheet">
+  <script defer src="./app.js"></script>
+</head>
+
+<body>
+
+  <div style="height: 101vh;" class="flex flex-col container px-7 md:px-16 mx-auto opacity-transition duration-300">
+
+    <div class="flex justify-between items-center">
+      <div>
+        <a href="#about">
+          <img src="./images/jasper_diongco_logo.png" class="w-44 sm:w-64 user-drag-none" alt="Logo">
+        </a>
+      </div>
+
+      <div></div>
+
+      <nav class="lg:flex space-x-4 items-center mt-1 hidden">
+        <a href="#services" class="main-nav-link w-36">Services</a>
+        <a href="#projects" class="main-nav-link w-36">Projects</a>
+        <a href="#about" class="main-nav-link w-40">About
+          Me</a>
+        <a href="#contact" class="main-nav-link w-36">Contact</a>
+      </nav>
+    </div>
+
+
+    <div class="flex-1 grid grid-cols-1 lg:grid-cols-2">
+      <div class="order-2 lg:order1">
+        <h2 class="text-3xl sm:text-4xl -mt-5 sm:mt-0 lg:mt-40 font-semibold uppercase">Web and Mobile App Developer
+        </h2>
+        <p class="text-xl sm:text-2xl mt-4 uppercase">Unleash Your Business' Full Potential With Our Software
+          Development Expertise
+        </p>
+        <a href="#contact">
+          <button
+            class="uppercase px-12 py-4 bg-green-950 text-white mt-7 text-xl sm:text-2xl border-solid border-2 hover:bg-white hover:text-green-800 hover:border-solid hover:border-2 hover:border-green-700 transition duration-300">Hire
+            the Best</button>
+        </a>
+
+        <img class="w-40 relative left-64 top-4 lg:top-9 user-drag-none hidden md:block" src="images/arrow-up.png"
+          alt="Arrow Up">
+      </div>
+      <div class="flex items-center lg:items-start justify-end order-1 lg:order-2">
+        <img
+          class="user-drag-none w-11/12 sm:w-2/3 mx-auto -mt-5 sm:mt-4 2xl:mt-5 xl:w-3/4 xl:mt-16 lg:mt-24 lg:w-11/12"
+          src="images/hero.png" alt="Jasper Diongco">
+      </div>
+    </div>
+  </div>
+
+  <section id="services" class="opacity-transition duration-700 bg-g-green">
+    <div class="container px-7 md:px-16 mx-auto py-16 text-white">
+      <h2 class="font-semibold text-3xl sm:text-4xl text-center uppercase">Professional Services</h2>
+
+      <div class="grid xl:grid-cols-3 gap-4 mt-10 md:mt-14 lg:grid-cols-1">
+        <div class="card-service from-bottom-transition duration-700 delay-200">
+          <img class="w-20" src="./images/code.png" alt="Web Development Service">
+          <h3 class="card-service-title">Web Development</h3>
+          <p class="card-service-content">Maximize your business growth with professionally developed web
+            application.
+            Prioritizing intuitive user interfaces and user-centric solutions for customized applications for HR,
+            accounting, inventory systems, e-commerce, and and more.</p>
+        </div>
+        <div class="card-service from-bottom-transition duration-700 delay-200">
+          <img class="w-20 -mt-1" src="./images/smartphone.png" alt="Mobile Development Service">
+          <h3 class="card-service-title">Mobile App Development</h3>
+          <p class="card-service-content">Let's turn your app idea into reality. Get a fully functional app with an
+            intuitive user interface design. My expertise includes creating productivity tools, e-commerce solutions,
+            food delivery apps, and applications with barcode scanning functionality. Developed for cross-platform,
+            ready for both iOS and Android.</p>
+        </div>
+        <div class="card-service from-bottom-transition duration-700 delay-200">
+          <img class="w-20 -mt-3" src="./images/web-design.png" alt="Mobile Development Service">
+          <h3 class="card-service-title">Wordpress Design & Development</h3>
+          <p class="card-service-content">Get a beautifully designed website that attracts more customers to your
+            business.
+            Designed and tailored to meet your specific needs, with a focus on responsive design. This ensures your
+            website looks great and functions perfectly on all screen sizes, including desktops, laptops, tablets, and
+            mobile devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="opacity-transition duration-1000">
+    <div class="container px-7 md:px-16 mx-auto py-16">
+      <h2 class="font-semibold text-3xl sm:text-4xl text-center uppercase">Recent Projects</h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-3 sm:mt-10">
+        <a href="ipigeon_mobile_app.html">
+          <div class="card-project from-bottom-transition duration-700">
+            <h6 class="card-project-title">IPigeon Mobile App</h6>
+            <img src="./images/ipigeon_thumbnail.png" alt="IPigeon Image Cover" class="card-project-image-cover">
+          </div>
+        </a>
+
+        <a href="student_outcomes_assessment_system.html">
+          <div class="card-project from-bottom-transition duration-700">
+            <h6 class="card-project-title">Student Outcomes Assessment System</h6>
+            <img src="./images/soa_thumbnail.png" alt="Student Outcomes Assessment System Cover"
+              class="card-project-image-cover">
+          </div>
+        </a>
+
+
+        <a href="payroll_and_attendance_system.html">
+          <div class="card-project from-bottom-transition duration-700">
+            <h6 class="card-project-title">Payroll and Attendance System</h6>
+            <img src="./images/payroll_thumbnail.png" alt="Payroll Image Cover" class="card-project-image-cover">
+          </div>
+        </a>
+
+        <a href="sales_monitoring_system.html">
+          <div class="card-project from-bottom-transition duration-700">
+            <h6 class="card-project-title">Sales Monitoring System</h6>
+            <img src="./images/sales_monitoring_thumbnail.png" alt="Sales Monitoring Cover"
+              class="card-project-image-cover">
+          </div>
+        </a>
+
+        <a href="ecommerce_barcode_scanner.html">
+          <div class="card-project from-bottom-transition duration-700">
+            <h6 class="card-project-title">E-Commerce Barcode Scanner</h6>
+            <img src="./images/barcode_scanner_thumbnail.png" alt="Barcode Scanner App Cover"
+              class="card-project-image-cover">
+          </div>
+        </a>
+
+        <a href="fluent_coder_mobile_app.html">
+          <div class="card-project from-bottom-transition duration-700">
+            <h6 class="card-project-title">Fluent Coder Mobile App</h6>
+            <img src="./images/fluent_coder_thumbnail.png" alt="Fluent Coder App Cover"
+              class="card-project-image-cover">
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="about" class="bg-g-green opacity-transition duration-700">
+    <div class="text-white container mx-auto py-16 xl:py-16 px-7 md:px-16 grid grid-cols-1 lg:grid-cols-2 lg:py-28">
+      <div class="flex items-center">
+        <img src="./images/about_me_1.jpg" class="xl:w-9/12 mx-auto lg:w-10/12 sm:w-3/4 w-full"
+          alt="Jasper Diongco About Picture">
+      </div>
+      <div class="flex content-center justify-center flex-col mt-12 lg:mt-0">
+        <h2 class="text-4xl sm:text-5xl text-center uppercase">About Me</h2>
+        <p class="text-center sm:text-left text-xl mt-4 sm:mt-5 md:mt-8">Hi I'm Jasper Diongco. I help businesses to
+          maximize their growth through professionally
+          developed web applications. Based in the Philippines, I have 4 years of solid experience in web and mobile app
+          development. With a focus on developing productivity apps, e-commerce websites, and tailored applications for
+          HR, accounting, and inventory management, I deliver fast and secure applications, prioritizing intuitive user
+          interfaces and user-centric solutions. I am passionate about leadership and driven to make a positive impact.
+          Let's connect and drive success together.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="opacity-transition duration-1000">
+    <div class="py-16 px-7 md:px-16 mx-auto">
+      <h2 class="font-semibold text-3xl sm:text-4xl text-center uppercase mt-5">Hire the Best</h2>
+
+      <div class="flex justify-center mt-3">
+        <form action="https://formsubmit.co/diongcojspr@gmail.com" method="POST"
+          class="xl:w-8/12 lg:w-5/6 w-full grid grid-cols-1 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="" class="text-xl font-light">NAME</label>
+              <input name="name" type="text" class="contact-input">
+            </div>
+            <div>
+              <label for="" class="text-xl font-light">EMAIL</label>
+              <input name="email" type="email" class="contact-input">
+            </div>
+          </div>
+          <div>
+            <label for="" class="text-xl font-light">TYPE OF PROJECT</label>
+            <select name="type_of_project" id="" class="contact-input">
+              <option>Web Development</option>
+              <option>Mobile App Development</option>
+              <option>Wordpress Design & Development</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="" class="text-xl font-light">PROJECT TIMELINE</label>
+              <select name="project_timeline" id="" class="contact-input">
+                <option>3 days</option>
+                <option>7 days</option>
+                <option>15 days</option>
+                <option selected>1 Month</option>
+                <option>2 Months</option>
+                <option>3 Months</option>
+                <option>4 Months or more</option>
+              </select>
+            </div>
+            <div>
+              <label for="" class="text-xl font-light">YOUR BUDGET</label>
+              <input name="budget" type="text" class="contact-input">
+            </div>
+          </div>
+          <div>
+            <label for="" class="text-xl font-light">MESSAGE</label>
+            <textarea name="message" rows="3" name="message" id="" class="contact-input"></textarea>
+          </div>
+          <div>
+            <button type="submit"
+              class="uppercase px-10 py-3 bg-green-950 text-white mt-7 text-lg border-solid border-2 hover:bg-white hover:text-green-800 hover:border-solid hover:border-2 hover:border-green-700 transition duration-300">SEND
+              MESSAGE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-g-green py-10 text-white">
+    <div class="container px-7 md:px-16 mx-auto py-7 sm:py-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="flex items-start">
+          <div>
+            <img src="./images/email.png" alt="Email Icon">
+          </div>
+          <div class="ml-3">
+            <div class="text-xl font-semibold">Email</div>
+            <div class="text-lg mt-2">diongcojspr@gmail.com</div>
+          </div>
+        </div>
+        <div class="flex items-start mt-5 sm:mt-0">
+          <div>
+            <img src="./images/linkedin.png" alt="LinkedIn Icon">
+          </div>
+          <div class="ml-3">
+            <div class="text-xl font-semibold">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/jasper-diongco/" target="_blank" class="link">
+              <div class="text-lg mt-2">jasper-diongco</div>
+            </a>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <div class="font-semibold text-xl">Links</div>
+          <nav class="flex flex-col text-lg space-y-3 mt-3">
+            <a href="#services" class="link">Services</a>
+            <a href="#projects" class="link">Projects</a>
+            <a href="#about" class="link">About
+              Me</a>
+            <a href="#contact" class="link">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-color: #192f21;" class="border-t-2 border-solid text-center pt-7 text-lg">
+      &copy; <span id="current-year"></span> Jasper Diongco
+    </div>
+  </footer>
+</body>
+
+</html>

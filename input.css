@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  @apply scroll-smooth;
+}
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.user-drag-none {
+  -webkit-user-drag: none;
+}
+
+
+
+
+.opacity-full {
+  opacity: 1;
+}
+
+
+
+.finish-bottom-top-transition {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media(prefers-reduced-motion) {
+  .opacity-transition, .finish-bottom-top-transition {
+    transition: none;
+  }
+}
+
+
+@layer components {
+  .link {
+    @apply hover:underline underline-offset-8
+  }
+
+  .opacity-transition {
+    @apply transition-all;
+    opacity: 0;
+    
+  }
+
+  .from-bottom-transition {
+    @apply transition-all;
+    opacity: 0;
+    transform: translateY(10%);
+    
+  }
+
+  .main-nav-link {
+    @apply uppercase text-center px-8 py-3.5 inline-block border-solid border-2 border-white hover:text-white hover:bg-green-950 hover:border-green-950 transition duration-300;
+  }
+
+  .card-service {
+    @apply flex flex-col py-2 md:py-7 md:px-7 border-solid border-2 border-transparent items-center;
+  }
+
+  .card-service-title {
+    @apply text-2xl text-center mt-4;
+  }
+
+  .card-service-content {
+    @apply text-center mt-5 text-lg;
+  }
+
+  .card-project {
+    @apply flex flex-col items-center justify-start;
+  }
+
+  .card-project-title {
+    @apply z-50 text-2xl relative top-3 sm:top-7 border-b-2 border-solid border-transparent transition-all duration-300;
+  }
+
+  .card-project:hover  .card-project-title {
+    @apply border-black;
+  }
+
+  
+
+  .card-project-image-cover {
+    @apply w-full sm:w-10/12 transition-all duration-500;
+  }
+
+  .card-project:hover  .card-project-image-cover {
+    transform: scale(1.02);
+  }
+
+  .contact-input {
+    @apply w-full block mt-2 bg-gray-200 py-3 px-3 text-xl border-2 border-solid border-gray-200 focus:outline-none focus:bg-white focus:border-green-800;
+  }
+}
