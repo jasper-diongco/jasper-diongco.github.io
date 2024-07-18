@@ -32,6 +32,17 @@ html {
   opacity: 1;
 }
 
+
+#hero-header {
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  #hero-header {
+    height: 101vh;
+  }
+}
+
 @media(prefers-reduced-motion) {
   .opacity-transition, .finish-bottom-top-transition {
     transition: none;
@@ -74,16 +85,16 @@ html {
   }
 
   .card-project {
-    @apply flex flex-col items-center justify-start;
+    @apply flex flex-col justify-start px-4;
   }
 
   .card-project-title {
-    @apply z-50 text-2xl relative top-3 sm:top-7 border-b-2 border-solid border-transparent transition-all duration-300;
+    @apply z-50 text-3xl relative top-3 sm:top-7 transition-all duration-300 text-center;
   }
 
-  .card-project:hover  .card-project-title {
+  /* .card-project:hover  .card-project-title {
     @apply border-black;
-  }
+  } */
 
   
 
@@ -91,9 +102,9 @@ html {
     @apply w-full sm:w-10/12 transition-all duration-500;
   }
 
-  .card-project:hover  .card-project-image-cover {
+  /* .card-project:hover  .card-project-image-cover {
     transform: scale(1.02);
-  }
+  } */
 
   .contact-input {
     @apply w-full block mt-2 bg-gray-200 py-3 px-3 text-xl border-2 border-solid border-gray-200 focus:outline-none focus:bg-white focus:border-green-800;

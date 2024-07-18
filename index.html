@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/J.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,8 @@
 
 <body>
 
-  <div style="height: 101vh;" class="flex flex-col container px-7 md:px-16 mx-auto opacity-transition duration-300">
+  <div id="hero-header"
+    class="flex flex-col container px-7 md:px-16 mx-auto opacity-transition duration-300 pb-32 lg:pb-0">
 
     <div class="flex justify-between items-center">
       <div>
@@ -39,10 +41,9 @@
       </nav>
     </div>
 
-
     <div class="flex-1 grid grid-cols-1 lg:grid-cols-2">
-      <div class="order-2 lg:order1">
-        <h2 class="text-3xl sm:text-4xl -mt-5 sm:mt-0 lg:mt-40 font-semibold uppercase">Web and Mobile App Developer
+      <div class="flex flex-col justify-start lg:justify-center order-2 lg:order1">
+        <h2 class="text-3xl sm:text-4xl font-semibold uppercase mt-10">Web and Mobile App Developer
         </h2>
         <p class="text-xl sm:text-2xl mt-4 uppercase">Unleash Your Business' Full Potential With My Software
           Development Expertise
@@ -56,12 +57,13 @@
         <img class="w-40 relative left-64 top-4 lg:top-9 user-drag-none hidden md:block" src="images/arrow-up.png"
           alt="Arrow Up">
       </div>
-      <div class="flex items-center lg:items-start justify-end order-1 lg:order-2">
-        <img
-          class="user-drag-none w-11/12 sm:w-2/3 mx-auto -mt-5 sm:mt-4 2xl:mt-5 xl:w-3/4 xl:mt-16 lg:mt-24 lg:w-11/12"
+      <div class="flex items-start lg:items-center justify-end order-1 lg:order-2">
+        <img class="user-drag-none w-11/12 sm:w-2/3 mx-auto mt-12 sm:mt-14 lg:-mt-24 xl:w-3/4 lg:w-11/12"
           src="images/hero.png" alt="Jasper Diongco">
       </div>
     </div>
+
+
   </div>
 
   <section id="services" class="opacity-transition duration-700 bg-g-green">
@@ -101,55 +103,107 @@
 
   <section id="projects" class="opacity-transition duration-1000">
     <div class="container px-7 md:px-16 mx-auto py-16">
-      <h2 class="font-semibold text-3xl sm:text-4xl text-center uppercase">Recent Projects</h2>
+      <h2 class="font-semibold text-4xl text-center uppercase">Recent Projects</h2>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-3 sm:mt-10">
-        <a href="ipigeon_mobile_app.html">
-          <div class="card-project from-bottom-transition duration-700">
-            <h6 class="card-project-title">IPigeon Mobile App</h6>
-            <img src="./images/ipigeon_thumbnail.png" alt="IPigeon Image Cover" class="card-project-image-cover">
-          </div>
-        </a>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-3 sm:mt-10 ">
 
-        <a href="student_outcomes_assessment_system.html">
-          <div class="card-project from-bottom-transition duration-700">
-            <h6 class="card-project-title">Student Outcomes Assessment System</h6>
-            <img src="./images/soa_thumbnail.png" alt="Student Outcomes Assessment System Cover"
-              class="card-project-image-cover">
-          </div>
-        </a>
+        <div class="card-project from-bottom-transition duration-700">
+          <h6 class="card-project-title">IPigeon Mobile App</h6>
+          <ul class="list-disc ml-4 text-xl space-y-2 mt-7 lg:mt-12 font-light">
+            <li>Developed a pigeon-race clocking app for YonaPro subscribers.</li>
+            <li>Integrated a QR/Barcode Scanner for faster clocking using race stickers.</li>
+            <li>Integrated an SMS module to allow offline users to submit sticker codes via text messages.</li>
+            <li>Integrated the Google Maps API to accurately determine the precise location of pigeon lofts.</li>
+            <li>Developed another versions for Web and Messenger Platform for wider accessibility and convenience.
+            </li>
+          </ul>
+          <div class="text-xl font-light mt-4"><span class="font-semibold">Technologies used:</span> Native Android
+            Development, Java, Android Studio, Android Room/SQLite, PHP, MySQL,
+            Git, Retrofit, REST API</div>
+          <img src="./images/ipigeon_thumbnail.png" alt="IPigeon Image Cover" class="card-project-image-cover mx-auto">
+        </div>
 
 
-        <a href="payroll_and_attendance_system.html">
-          <div class="card-project from-bottom-transition duration-700">
-            <h6 class="card-project-title">Payroll and Attendance System</h6>
-            <img src="./images/payroll_thumbnail.png" alt="Payroll Image Cover" class="card-project-image-cover">
-          </div>
-        </a>
 
-        <a href="sales_monitoring_system.html">
-          <div class="card-project from-bottom-transition duration-700">
-            <h6 class="card-project-title">Sales Monitoring System</h6>
-            <img src="./images/sales_monitoring_thumbnail.png" alt="Sales Monitoring Cover"
-              class="card-project-image-cover">
-          </div>
-        </a>
 
-        <a href="ecommerce_barcode_scanner.html">
-          <div class="card-project from-bottom-transition duration-700">
-            <h6 class="card-project-title">E-Commerce Barcode Scanner</h6>
-            <img src="./images/barcode_scanner_thumbnail.png" alt="Barcode Scanner App Cover"
-              class="card-project-image-cover">
-          </div>
-        </a>
+        <div class="card-project from-bottom-transition duration-700">
+          <h6 class="card-project-title">Sales Monitoring System</h6>
+          <ul class="list-disc ml-4 text-xl space-y-2 mt-7 lg:mt-12 font-light">
+            <li>Developed a web application for case officers to monitor the status of prospective clients and
+              efficiently collaborate with other case officers and senior management.</li>
+            <li>Integrate a real time chat for important updates and collaboration.</li>
+            <li>Integrated an app and email notification module to facilitate client follow-ups.</li>
+            <li>Deployed and maintained the application on Digital Ocean.</li>
+          </ul>
+          <div class="text-xl font-light mt-4"><span class="font-semibold">Technologies used:</span> Laravel, React,
+            React Query, MUI, MySQL, Git, Mailgun API, Digital Ocean, Pusher API</div>
+          <img src="./images/sales_monitoring_thumbnail.png" alt="Sales Monitoring Cover"
+            class="card-project-image-cover mx-auto">
+        </div>
 
-        <a href="fluent_coder_mobile_app.html">
-          <div class="card-project from-bottom-transition duration-700">
-            <h6 class="card-project-title">Fluent Coder Mobile App</h6>
-            <img src="./images/fluent_coder_thumbnail.png" alt="Fluent Coder App Cover"
-              class="card-project-image-cover">
-          </div>
-        </a>
+        <div class="card-project from-bottom-transition duration-700">
+          <h6 class="card-project-title">Quotation Tool System</h6>
+          <ul class="list-disc ml-4 text-xl space-y-2 mt-7 lg:mt-12 font-light">
+            <li>Developed and innovated an advanced quotation tool system for sales officers to calculate health
+              insurance premium rates.</li>
+            <li>Implemented a feature for comparing premium rates and benefits across multiple insurers.</li>
+            <li>Deployed the application on Digital Ocean.</li>
+          </ul>
+          <div class="text-xl font-light mt-4"><span class="font-semibold">Technologies used:</span> Laravel, React,
+            MUI, MySQL, Git, Digital Ocean</div>
+          <img src="./images/web_app.png" alt="Payroll Image Cover" class="card-project-image-cover mx-auto">
+        </div>
+
+        <div class="card-project from-bottom-transition duration-700">
+          <h6 class="card-project-title">E-Commerce Barcode Scanner</h6>
+          <ul class="list-disc ml-4 text-xl space-y-2 mt-7 lg:mt-12 font-light">
+            <li>Developed an Android App with Barcode Scanner to verify the status of orders in Lazada.</li>
+            <li>Integrated the app with a laser-based barcode scanner device for precise and efficient scanning.</li>
+            <li>Implemented a feature to Import/Export records via Spreadsheet.</li>
+            <li>Implemented a feature to support the use of multiple shop accounts in Lazada.</li>
+          </ul>
+          <div class="text-xl font-light mt-4"><span class="font-semibold">Technologies used:</span> Native Android
+            Development, Java, Android Studio, Android Room/SQLite, Git, Retrofit, REST API</div>
+          <img src="./images/barcode_scanner_thumbnail.png" alt="Barcode Scanner App Cover"
+            class="card-project-image-cover mx-auto">
+        </div>
+
+
+        <div class="card-project from-bottom-transition duration-700">
+          <h6 class="card-project-title">Fluent Coder Mobile App</h6>
+          <ul class="list-disc ml-4 text-xl space-y-2 mt-7 lg:mt-12 font-light">
+            <li>Developed an Android App for Filipinos to learn programming using only their phones (Online/Offline)
+              with programming courses and coding community forum.</li>
+            <li>Integrated a Native Android Java Code Compiler and Interactive Command Prompt.</li>
+            <li>Integrated an Advanced Code Editor with the capability to code in multiple files.</li>
+            <li>Implemented a Coding Problems feature with automated checking of test cases to check if the solution
+              is correct.</li>
+            <li>Successfully Upload the App to Play Store and Deployed the API to Digital Ocean.</li>
+          </ul>
+          <div class="text-xl font-light mt-4"><span class="font-semibold">Technologies used:</span> Native Android
+            Development, Java, Android Studio, Android Room/SQLite, Git, Retrofit, REST API, Express JS, MySQL</div>
+          <img src="./images/fluent_coder_thumbnail.png" alt="Fluent Coder App Cover"
+            class="card-project-image-cover mx-auto">
+        </div>
+
+        <div class="card-project from-bottom-transition duration-700">
+          <h6 class="card-project-title">Student Outcomes Assessment System</h6>
+          <ul class="list-disc ml-4 text-xl space-y-2 mt-7 lg:mt-12 font-light">
+            <li>Developed a comprehensive system to assess student outcomes through automated evaluations of students'
+              knowledge and skills.</li>
+            <li>Implemented various reports and data analytics tools to support continuous improvement initiatives at
+              the university.</li>
+            <li>Integrated a Test Bank module to manage exams and test questions for assessments.</li>
+            <li>Implemented features for managing Programs, Courses, Curriculum, and Student Information.</li>
+            <li>Implemented a Curriculum Mapping to enable Mapping of Courses to Student Outcomes.
+            </li>
+          </ul>
+          <div class="text-xl font-light mt-4"><span class="font-semibold">Technologies used:</span> Laravel, Vue,
+            MySQL, Git, REST API</div>
+          <img src="./images/soa_thumbnail.png" alt="Student Outcomes Assessment System Cover"
+            class="card-project-image-cover mx-auto">
+        </div>
+
       </div>
 
     </div>
